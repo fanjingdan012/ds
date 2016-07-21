@@ -1,8 +1,3 @@
-/target/
-*/.classpath
-*/.project
-/.settings/
-
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
@@ -20,7 +15,6 @@ $RECYCLE.BIN/
 *.msp
 
 # Windows shortcuts
-
 *.lnk
 
 # =========================
@@ -47,3 +41,12 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+# specific
+.svn/
+target/
+classes/
+.classpath
+.project
+.settings/
+.idea/
+*.iml
