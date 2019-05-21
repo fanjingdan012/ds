@@ -46,6 +46,12 @@ public class Zip {
     	
     	return result; 		
 	}
+
+	/**
+	 *
+	 * @param file input file
+	 * @param basePath output base path
+	 */
     public void zip(File file,String basePath)  {		
     	try{
     		
@@ -96,7 +102,7 @@ public class Zip {
 	 * finish zip function
 	 * @param typeQunt
 	 */
-	public void writeZip(FileOutputStream fos,DataOutputStream saver,TreeNode []tree,char[]buffer){
+	private void writeZip(FileOutputStream fos,DataOutputStream saver,TreeNode []tree,char[]buffer){
 		try {
 			//write code
 			saver.write(tree.length);
@@ -199,7 +205,7 @@ public class Zip {
 		
     	return; 		
 	}
-	
+
 	/**
 	 * finish unzip function
 	 * @param c
@@ -299,8 +305,9 @@ public class Zip {
 	 */
 	
     public TreeNode[] buildHuffman(TreeNode[] tree){
-    	sort(tree);    	
-    	//change to linked list
+    	//0. sort by weight
+    	sort(tree);
+    	//1. change to linked list
     	TreeNode header = tree[0];
     	TreeNode trailer = tree[tree.length - 1];    	
     	for(int i = 0;i < tree.length - 1;i++ ){
@@ -308,7 +315,6 @@ public class Zip {
     		tree[i+1].prev = tree[i];
     		
     	}
-    
     
     	while(header != trailer.prev&&header!=null){
     		TreeNode a = header;
@@ -326,6 +332,7 @@ public class Zip {
         	header.parent = tmp;
         	header.next.parent = tmp;
         	header = header.next.next;
+
         	//insert new TreeNode
         	TreeNode finder = header;
         	while((finder!=null)&&(tmp.f>finder.f)){        		

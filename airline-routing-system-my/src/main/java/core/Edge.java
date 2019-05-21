@@ -14,10 +14,8 @@ public class Edge{
 		this.startV = new Vertex(startNameOfV);
 		this.endV = new Vertex (endNameOfV);
 		this.weight = weight;
-		// TODO Auto-generated constructor stub
 	}
 	public Edge() {
-		// TODO Auto-generated constructor stub
 	}
 	public String toString(){
 		return startV.name+" "+endV.name+" "+weight;

@@ -7,7 +7,7 @@ public class TreeNode{
 	public TreeNode rightChild = null;
 	public TreeNode prev = null;
 	public TreeNode next = null;
-	public int f = 0;
+	public int f = 0; //frequency
 	public String code = "0";
 	public char element='#';
 	public int depth = 0;
