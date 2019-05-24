@@ -1,4 +1,4 @@
-package UI;
+package UI.airline;
 
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -9,15 +9,11 @@ import javax.swing.*;
 import javax.swing.border.TitledBorder;
 
 
-import util.Stack;
-
-import core.Graph;
-import core.Vertex;
+import graph.Graph;
+import graph.Vertex;
 
 
-
-
-public class AirlineUI extends JFrame{	
+public class AirlineUI extends JFrame{
 	public static Graph map = new Graph();
 	static AirlineUI frame;
 	public static File file;
@@ -46,14 +42,14 @@ public class AirlineUI extends JFrame{
     	setLayout(new BorderLayout());
     	add(jpCenter, "Center");
     	add(jpEast, "East");
-		file=new File(classLoader.getResource("Airlines/Airline.txt").getFile());
+		file=new File(classLoader.getResource("graph/Airlines/Airline.txt").getFile());
 		System.out.print(file.getAbsolutePath());
-		iconMap = new ImageIcon(classLoader.getResource("image/map.png").getFile());
-		iconPlane = new ImageIcon(classLoader.getResource("image/plane.png").getFile());
-		iconAirport = new ImageIcon(classLoader.getResource("image/airport.png").getFile());
-		iconDelAirport = new ImageIcon(classLoader.getResource("image/DELairport.png").getFile());
-		iconAirline = new ImageIcon(classLoader.getResource("image/airline.png").getFile());
-		iconDelAirline = new ImageIcon(classLoader.getResource("image/DELairline.png").getFile());
+		iconMap = new ImageIcon(classLoader.getResource("graph/image/map.png").getFile());
+		iconPlane = new ImageIcon(classLoader.getResource("graph/image/plane.png").getFile());
+		iconAirport = new ImageIcon(classLoader.getResource("graph/image/airport.png").getFile());
+		iconDelAirport = new ImageIcon(classLoader.getResource("graph/image/DELairport.png").getFile());
+		iconAirline = new ImageIcon(classLoader.getResource("graph/image/airline.png").getFile());
+		iconDelAirline = new ImageIcon(classLoader.getResource("graph/image/DELairline.png").getFile());
 		imagePlane = iconPlane.getImage();
 		jlbPlane = new JLabel(iconPlane);
 		jbAddV = new JButton(iconAirport);

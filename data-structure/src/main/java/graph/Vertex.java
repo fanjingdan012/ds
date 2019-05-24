@@ -1,11 +1,11 @@
-package core;
+package graph;
 
 import javax.swing.JOptionPane;
 
-import util.DLinkedList;
-import util.Node;
-import UI.AirlineUI;
-import UI.Position;
+import UI.airline.AirlineUI;
+import UI.airline.Position;
+import dlinkedlist.DLinkedList;
+import dlinkedlist.Node;
 
 public class Vertex{
 	public String name;

@@ -1,4 +1,4 @@
-package core;
+package graph;
 
 public class Edge{
 	public Vertex startV;

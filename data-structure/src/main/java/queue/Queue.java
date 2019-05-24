@@ -45,7 +45,7 @@ public class Queue {
 	//@Override
 	public Object dequeue() {
 		if(size()==0){
-			System.out.println("error:Dequeue is empty");
+			System.out.println("error: queue is empty");
 			return null;
 		}
 		else{

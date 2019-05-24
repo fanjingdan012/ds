@@ -1,4 +1,4 @@
-package UI;
+package UI.airline;
 
 public class  EmptyStackException extends Exception {
 

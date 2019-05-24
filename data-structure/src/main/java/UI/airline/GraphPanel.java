@@ -1,19 +1,16 @@
-package UI;
+package UI.airline;
+
+import dlinkedlist.Node;
+import graph.Edge;
+import graph.Vertex;
 
 import java.awt.Color;
 import java.awt.Graphics;
 
 import javax.swing.JPanel;
-import javax.swing.Timer;
 
 
-import util.Node;
-import util.Stack;
 
-
-import core.Edge;
-import core.Graph;
-import core.Vertex;
 
 public class GraphPanel extends JPanel{
 	public int width = 0;

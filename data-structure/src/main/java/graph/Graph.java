@@ -1,7 +1,5 @@
-package core;
+package graph;
 
-import java.awt.Color;
-import java.awt.Graphics;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -10,17 +8,14 @@ import java.io.PrintWriter;
 import java.util.Scanner;
 
 import javax.swing.JOptionPane;
-import javax.swing.JPanel;
-import javax.swing.Timer;
 
-import UI.AirlineUI;
-import UI.EmptyStackException;
-import UI.TimerFlashListener;
+import UI.airline.AirlineUI;
 
-import util.DLinkedList;
-import util.Node;
-import util.Queue;
-import util.Stack;
+import dlinkedlist.DLinkedList;
+import dlinkedlist.Node;
+import queue.Queue;
+import stack.Stack;
+
 
 public class Graph {
 	public int numOfV;

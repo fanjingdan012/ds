@@ -1,8 +1,8 @@
-package util;
+package dlinkedlist;
 
-import UI.AirlineUI;
-import core.Edge;
-import core.Vertex;
+
+import graph.Edge;
+import graph.Vertex;
 
 
 public class DLinkedList {

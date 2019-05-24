@@ -1,4 +1,4 @@
-package UI;
+package UI.airline;
 
 
 public class Position{
