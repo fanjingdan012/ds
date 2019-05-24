@@ -22,7 +22,7 @@ run AirlineUI main
 
 导入后出现如下界面
 
-![airline-ui-imported](https://github.com/fanjingdan012/ds/blob/master/data-structure/pic/airline-ui-imported.jpg)
+![airline-ui-imported](https://github.com/fanjingdan012/ds/blob/master/data-structure/pic/airline-ui-imported.png)
 
 并且可以不用关闭程序，重新导入其他文件，文件格式为“VERTEX XXX”和“EDGE XXX YYY ZZZ”其中XXX、YYY为端点，ZZZ为航线长度。必须为数字。
 支持加入、删除机场，加入、删除航线的功能，改变后的图形信息会被记录到原来导入的文件中。如果没有导入文件，直接加入机场、航线的，图形会被记录到airlines.txt中。
@@ -32,7 +32,7 @@ run AirlineUI main
 如果用户输入的名字已经有了，就会警告“already have this vertex”
 随后改变信息会被记录到文件中。
 
-![add-airport](https://github.com/fanjingdan012/ds/blob/master/data-structure/pic/add-airport.jpg)
+![add-airport](https://github.com/fanjingdan012/ds/blob/master/data-structure/pic/add-airport.png)
 
  
 ### 1.3删除机场
