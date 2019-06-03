@@ -17,7 +17,7 @@ import queue.Queue;
 import stack.Stack;
 
 
-public class Graph {
+public class Graph implements IGraph{
 	public int numOfV;
 	public int numOfE;
 	public DLinkedList vertices = new DLinkedList();
@@ -343,9 +343,85 @@ public class Graph {
     }
 
 
- 
+	@Override
+	public int n() {
+		return 0;
+	}
 
+	@Override
+	public int e() {
+		return 0;
+	}
 
+	@Override
+	public IEdge first(int v) {
+		return null;
+	}
+
+	@Override
+	public IEdge next(IEdge w) {
+		return null;
+	}
+
+	@Override
+	public boolean isEdge(IEdge w) {
+		return false;
+	}
+
+	@Override
+	public boolean isEdge(int i, int j) {
+		return false;
+	}
+
+	@Override
+	public int v1(IEdge w) {
+		return 0;
+	}
+
+	@Override
+	public int v2(IEdge w) {
+		return 0;
+	}
+
+	@Override
+	public void setEdge(int i, int j, int weight) {
+
+	}
+
+	@Override
+	public void setEdge(IEdge w, int weight) {
+
+	}
+
+	@Override
+	public void delEdge(IEdge w) {
+
+	}
+
+	@Override
+	public void delEdge(int i, int j) {
+
+	}
+
+	@Override
+	public int weight(int i, int j) {
+		return 0;
+	}
+
+	@Override
+	public int weight(IEdge w) {
+		return 0;
+	}
+
+	@Override
+	public void setMark(int v, int val) {
+
+	}
+
+	@Override
+	public int getMark(int v) {
+		return 0;
+	}
 }
 
 
